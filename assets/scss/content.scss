@@ -1,0 +1,233 @@
+.ban-carousel {
+  position: relative;
+}
+.ban-carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+.ban-carousel-inner > .ban-item {
+  display: none;
+  position: relative;
+  -webkit-transition: 0.6s ease-in-out left;
+  -o-transition: 0.6s ease-in-out left;
+  transition: 0.6s ease-in-out left;
+}
+.ban-carousel-inner > .ban-item > img,
+.ban-carousel-inner > .ban-item > a > img {
+  line-height: 1;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .ban-carousel-inner > .ban-item {
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    -o-transition: -o-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-perspective: 1000px;
+    perspective: 1000px;
+  }
+  .ban-carousel-inner > .ban-item.next,
+  .ban-carousel-inner > .ban-item.ban-active.right {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    left: 0;
+  }
+  .ban-carousel-inner > .ban-item.prev,
+  .ban-carousel-inner > .ban-item.ban-active.left {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    left: 0;
+  }
+  .ban-carousel-inner > .ban-item.next.left,
+  .ban-carousel-inner > .ban-item.prev.right,
+  .ban-carousel-inner > .ban-item.ban-active {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    left: 0;
+  }
+}
+.ban-carousel-inner > .ban-active,
+.ban-carousel-inner > .next,
+.ban-carousel-inner > .prev {
+  display: block;
+}
+.ban-carousel-inner > .ban-active {
+  left: 0;
+}
+.ban-carousel-inner > .next,
+.ban-carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.ban-carousel-inner > .next {
+  left: 100%;
+}
+.ban-carousel-inner > .prev {
+  left: -100%;
+}
+.ban-carousel-inner > .next.left,
+.ban-carousel-inner > .prev.right {
+  left: 0;
+}
+.ban-carousel-inner > .ban-active.left {
+  left: -100%;
+}
+.ban-carousel-inner > .ban-active.right {
+  left: 100%;
+}
+.ban-carousel-control {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 15%;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0);
+}
+.ban-carousel-control.ban-left {
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.0001) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);
+}
+.ban-carousel-control.ban-right {
+  left: auto;
+  right: 0;
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+}
+.ban-carousel-control:hover,
+.ban-carousel-control:focus {
+  outline: 0;
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+.ban-carousel-control .icon-prev,
+.ban-carousel-control .icon-next,
+.ban-carousel-control .glyphicon-chevron-left,
+.ban-carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  margin-top: -10px;
+  z-index: 5;
+  display: inline-block;
+}
+.ban-carousel-control .icon-prev,
+.ban-carousel-control .glyphicon-chevron-left {
+  left: 50%;
+  margin-left: -10px;
+}
+.ban-carousel-control .icon-next,
+.ban-carousel-control .glyphicon-chevron-right {
+  right: 50%;
+  margin-right: -10px;
+}
+.ban-carousel-control .icon-prev,
+.ban-carousel-control .icon-next {
+  width: 20px;
+  height: 20px;
+  line-height: 1;
+  font-family: serif;
+}
+.ban-carousel-control .icon-prev:before {
+  content: '\2039';
+}
+.ban-carousel-control .icon-next:before {
+  content: '\203a';
+}
+.ban-carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+.ban-carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 1px;
+  text-indent: -999px;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #000 \9;
+  background-color: rgba(0, 0, 0, 0);
+}
+.ban-carousel-indicators .ban-active {
+  margin: 0;
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+}
+.ban-carousel-caption {
+  position: absolute;
+  left: 15%;
+  right: 15%;
+  bottom: 20px;
+  z-index: 10;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #ffffff;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+}
+.ban-carousel-caption .btn {
+  text-shadow: none;
+}
+@media screen and (min-width: 768px) {
+  .ban-carousel-control .glyphicon-chevron-left,
+  .ban-carousel-control .glyphicon-chevron-right,
+  .ban-carousel-control .icon-prev,
+  .ban-carousel-control .icon-next {
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 30px;
+  }
+  .ban-carousel-control .glyphicon-chevron-left,
+  .ban-carousel-control .icon-prev {
+    margin-left: -10px;
+  }
+  .ban-carousel-control .glyphicon-chevron-right,
+  .ban-carousel-control .icon-next {
+    margin-right: -10px;
+  }
+
+  .ban-carousel-control span{
+    position: absolute;
+    top: 50%;
+    width: 30px;
+    height: 30px;
+    margin-top: -10px;
+    font-size: 30px;
+  }
+
+  .ban-carousel-caption {
+    left: 20%;
+    right: 20%;
+    padding-bottom: 30px;
+  }
+  .ban-carousel-indicators {
+    bottom: 20px;
+  }
+}

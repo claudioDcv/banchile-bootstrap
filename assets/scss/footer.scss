@@ -1,0 +1,64 @@
+footer{
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#333333+0,333333+80,000000+80,000000+100,2989d8+100 */
+   background: #333333; /* Old browsers */
+   background: -moz-linear-gradient(left,  #333333 0%, #333333 80%, #000000 80%, #000000 100%, #2989d8 100%); /* FF3.6-15 */
+   background: -webkit-linear-gradient(left,  #333333 0%,#333333 80%,#000000 80%,#000000 100%,#2989d8 100%); /* Chrome10-25,Safari5.1-6 */
+   background: linear-gradient(to right,  #333333 0%,#333333 80%,#000000 80%,#000000 100%,#2989d8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#2989d8',GradientType=1 ); /* IE6-9 */
+   color: white;
+   font-size: 1em;font-weight: 300;
+   padding: 0;
+   h4{
+      font-size: 1em;
+      font-weight: 400;
+      padding-top: 1em;
+   }
+   ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      li{
+         margin-bottom: .4em;
+         a{
+            color: white;
+            font-size: 1em;
+            text-decoration: none;
+         }
+      }
+   }
+   .noticias{
+      background-color: black;
+
+      .detalle-noticias{
+         font-size: .8em;
+      }
+
+      .social{
+         padding-bottom: 1em;
+         a{
+            color: white;
+            opacity: .5;
+            text-decoration: none;
+            &:hover{
+               opacity: 10;
+            }
+
+         }
+   }
+
+   }
+}
+
+.legales{
+   background-color: #333333;
+   border-top: 1px solid white;
+   font-size: .9em;
+   margin: 0 auto;
+   p{
+      float: left;
+   }
+   .right{
+      float: right;
+   }
+
+}

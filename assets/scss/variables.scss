@@ -1,0 +1,20 @@
+
+$color-primario: hsla(209, 38, 40, 1); /* azul */
+$color-secundario: hsla(0, 0, 29, 1); /* gris footer */
+$color-texto: hsla(0, 0, 61, 1); /* gris para textos */
+$color-bg-primario: hsla(0, 100, 100, 1); /* backgroun blanco */
+
+$color-bg-default: hsla(210, 3, 85, 1); /* gris para textos */
+
+$color-box-primario: hsla(0, 0, 98, 1); /* background general empresa */
+$color-box-secundario: hsla(0, 0, 92, 1); /* background cuentas */
+$color-box-noticias: hsla(0, 0, 0, 1); /* background noticias footer */
+
+$color-primary: #4A90E2;
+$color-warning: hsla(39, 97, 51, 1);
+$color-success: hsla(120, 39, 54, 1);
+$color-danger: hsla(13, 98, 41, 1);
+$color-alerta: hsla(39, 97, 51, 1);
+
+//MEDIA QUERY
+$corte-md-to-lg: 1199px;

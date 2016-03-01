@@ -3454,3 +3454,54 @@ table th[class*="ban-col-"] {
         bottom: 20px;
     }
 }
+/* >> helper claudio.dcv@gmail.com */
+/*FRAMEWORK ALIGN VERTICALMENTE PARA BOOTSTRAP claudio.dcv@gmail.com */
+.vertical-align {display: table;height:100%;width: 100%;overflow: hidden;position: relative;}
+.vertical-align>* {display: table-cell;vertical-align: middle;width: 100%;}
+@media screen and (max-width: 767px) {
+.vertical-align-sm {display: table;height:100%;width: 100%;overflow: hidden;position: relative;}
+.vertical-align-sm>* {display: table-cell;vertical-align: middle;width: 100%;}
+}
+
+/* >> Ratios */
+.width {
+    width: 100%;
+    background: rgba(255, 255, 255, .3);
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    vertical-align: top;
+    box-shadow: 0 0 4px rgba(0, 0, 0, .3)
+}
+.width:before {
+    content: '';
+    display: block
+}
+.ratio1-1::before {
+    padding-top: 100%
+}
+.ratio1-3::before {
+    padding-top: 33.33333333%;
+}
+.ratio4-1::before {
+    padding-top: 40%
+}
+.ratio5-1::before {
+    padding-top: 50%
+}
+.ratio16-9::before {
+    padding-top: 56.25%;
+}
+.ratio16-8::before {
+    padding-top: 50.00%;
+}
+.contenido {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    font-size: 1.5rem;
+    color: #FFF
+}

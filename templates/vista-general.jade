@@ -1,0 +1,127 @@
+section#vista-general
+      article#bienvenida
+        .ban-container
+          .ban-row
+            .ban-col-xs-7
+              h2 Bienvenido Camilo
+              p Tu último ingreso al sitio: Lunes 25 de Enero de 2016 a las 14:24hrs
+              table.table.table-condensed
+                thead
+                  tr
+                    th Últimos movimientos
+                    th Empresa
+                    th Monto
+                tbody
+                  tr
+                    td Aporte a FFMM Disponible A
+                    td Agricola Campo Lindo Ltda.
+                    td $20.000.098
+                  tr
+                    td Rescate de FFMM Asiático
+                    td Pesquera Corp Fish Ltda.
+                    td $12.000.000
+                  tr
+                    td Pago a tercero Banco New York
+                    td Importadora Shugion S.A.
+                    td $100.216
+            .ban-col-xs-5
+              #mi-indicador
+                // aqui tiene que ir el grafico de angular
+                img.ban-img-responsive(src='assets/img/mi-indicador.png', alt='')
+                a#seting-mi-grafico(href='#')
+                  i.fa.fa-cog
+      // fin bienvenida
+      article#resumen-empresa
+        .ban-container
+          .ban-row
+            .ban-col-xs-12
+              h2 Resumen de empresas
+            .ban-clearfix
+      
+          .ban-row#empresa1
+            .ban-col-xs-12
+              .ban-row.ban-row-fix
+                .ban-col-xs-4.a
+                  h3 Agricola Campo Lindo Ltda.
+                .ban-col-xs-8.b
+                  p detalle empresa
+          //- #empresa1.ban-row
+          //-   .ban-col-xs-4
+          //-     .detalle-empresa
+          //-       .info-empresa
+          //-         h3 Agricola Campo Lindo Ltda.
+          //-         p 78.098.087-1
+          //-       .notificaciones
+          //-         .ban-row
+          //-           .ban-col-xs-12
+          //-             p
+          //-               | Patrimonio consolidado al 20/01/2016 
+          //-               span $1.100.234.232
+          //-           .ban-col-xs-3
+          //-             p Notificaciones   |
+          //-           .ban-col-xs-9
+          //-             ul
+          //-               li
+          //-                 em Alertas de operaciones
+          //-                 a(href='#')
+          //-                   i.fa.fa-exclamation-circle
+          //-               li
+          //-                 em Avisos y recomendaciones
+          //-                 a(href='#')
+          //-                   i.fa.fa-exclamation-circle
+          //-           .ban-col-xs-12
+          //-             a(href='#') Detalle de la empresa
+          //-   // fin ban-col-xs-4
+          //-   .ban-col-xs-8
+          //-     .detalle-cuenta
+          //-       .menu-accesos-cuenta
+          //-         .dropdown
+          //-           button#dropdownMenu1.btn.btn-default.dropdown-toggle(type='button', data-toggle='dropdown', aria-haspopup='true', aria-expanded='true')
+          //-             | Cuenta 0 
+          //-             i.fa.fa-angle-down
+          //-           ul.dropdown-menu(aria-labelledby='dropdownMenu1')
+          //-             li
+          //-               a(href='#') Cuenta 1
+          //-             li
+          //-               a(href='#') Cuenta 2
+          //-             li
+          //-               a(href='#') Cuenta 3
+          //-         a.btn.btn-default(href='#') Detalle de la cuenta
+          //-         a(href='#') Operaciones recurrentes
+          //-         a(href='#')
+          //-           i.fa.fa-cog
+          //-       .ban-row
+          //-         .ban-col-xs-6
+          //-           table.table.table-condensed
+          //-             thead
+          //-               tr
+          //-                 th Distribución por moneda
+          //-             tbody
+          //-               tr
+          //-                 td Patrimonio en CLP
+          //-                 td $20.000.098
+          //-               tr
+          //-                 td Patrimonio en USD
+          //-                 td USD$ 12.000.000
+          //-               tr
+          //-                 td Patrimonio en EUR
+          //-                 td $100.216
+          //-         .ban-col-xs-6
+          //-           table.table.table-condensed
+          //-             thead
+          //-               tr
+          //-                 th Resumen de operaciones
+          //-             tbody
+          //-               tr
+          //-                 td Operaciones pago hoy
+          //-                 td $22.000.098
+          //-               tr
+          //-                 td Operaciones por pagar
+          //-                 td $50.000.000
+          //-               tr
+          //-                 td Total
+          //-                 td $72.000.000
+            // fin ban-col-xs-8
+          // fin ban-row  "EMPRESA 1"
+        // fin ban-container
+      // fin de resumen empresa

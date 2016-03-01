@@ -1,0 +1,144 @@
+
+#vista-general{
+   padding: 0;
+   margin: 0;
+   #bienvenida{
+      color: $color-secundario;
+      margin-top: 1em;
+      h2{
+         color:$color-primary;
+         font-size: 1.9em;
+         font-weight: 400;
+      }
+      table{
+         margin-top: 1.5em;
+         font-size: .8em;
+         thead{
+            color: $color-primary;
+         }
+      }
+      #mi-indicador{
+         position: relative;
+         height: auto;
+         width: 100%;
+         #seting-mi-grafico{
+            position: absolute;
+            top: .5em;
+            right: 1em;
+            z-index: 2;
+         }
+      }
+   }
+
+   #resumen-empresa{
+      color: $color-secundario;
+      margin-top: 2em;
+
+      h2{
+         border-bottom: 1px solid $color-texto;
+         font-size: 1.9em;
+         font-weight: 400;
+         padding-bottom: .5em;
+         margin-bottom: 1em;
+      }
+
+      #empresa1{
+         .detalle-empresa{
+            border: 1px solid red;
+            .info-empresa{
+               background-color: $color-secundario;
+               color: white;
+               padding: .7em;
+               height: 70px;
+               h3{
+                  font-size: 1.2em;
+                  font-weight: 400;
+                  margin: 0;
+                  padding: 0;
+               }
+               p{
+                  font-size: 1.2em;
+                  font-weight: 300;
+                  color: $color-texto;
+                  margin: .3em 0 0 0;
+                  padding: 0;
+               }
+            }
+            .notificaciones{
+               background-color: $color-bg-detalle-empresa;
+               border: 1px solid $color-texto;
+               color: $color-secundario;
+               padding: 1.3em .7em;
+
+               p{
+                  font-size: .9em;
+                  span{
+                     font-size: 1.2em;
+                  }
+               }
+               ul{
+                  list-style: none;
+                  margin: 0 0 0 2em;
+                  padding: 0;
+
+                  li{
+                     color: $color-primary;
+                     font-size: .9em;
+                     margin-bottom: .2em;
+                     text-align: right;
+
+                     a{
+                        color: $color-secundario;
+                        font-size: 1.5em;
+                        margin-left: 1em;
+                     }
+                  }
+               }
+
+               a:nth-child(1){
+                  background: $color-primary;
+                  border-radius: .3em;
+                  color: white;
+                  display: inline-block;
+                  font-size: 1em;
+                  margin-top: 1em;
+                  text-align: center;
+                  padding: .3em 0;
+                  text-decoration: none;
+                  width: 100%;
+                  &:hover{
+                     background-color: $color-warning;
+                  }
+               }
+            }
+
+         }
+
+         .detalle-cuenta{
+            border: 1px solid red;
+            .menu-accesos-cuenta{
+               color: white;
+               padding: .7em;
+               height: 70px;
+               .dropdown{
+                  display: inline-block;
+               }
+            }
+         }
+      }
+   } /*fin resumen empresa */
+}
+
+.ban-row-fix{margin: 0;}
+
+#empresa1{
+  .a{
+    border: solid 1px;
+    background: #CCC;
+  }
+  .b{
+    border: solid 1px;
+    border-left: none;
+    background: #DDD;
+  }
+}

@@ -56,7 +56,7 @@ section#home
                   i.fa.fa-sort-asc
                   |  127.02 2.7%
               li
-                | S&P 500
+                | S&amp;P 500
                 a(href='#')
                   i.fa.fa-sort-asc
                   |  127.02 2.7%
@@ -204,26 +204,23 @@ section#home
     section#testimonios
       #carrusel-testimonios.ban-carousel.ban-slide(data-ban-ride='ban-carousel')
         .ban-carousel-inner(role='listbox')
-          .ban-item.ban-active
-            img.ban-img-responsive(height='', src='assets/img/bg-video.png', alt='Campaña item primero')
-            .ban-carousel-caption
-              h3 1 Titulo de la campaña
-          .ban-item
-            img.ban-img-responsive(src='assets/img/bg-video.png', alt='Campaña item segundo')
-            .ban-carousel-caption
-              h3 2 Titulo de la campaña
-          #player.ban-item
-            img.ban-img-responsive(src='assets/img/bg-video.png', alt='Campaña item tercero')
-            .ban-carousel-caption
-              h3 3 Titulo de la campaña
+          .width.ratio5-1.ban-item.ban-active
+            .contenido
+              #player1
+          .width.ratio5-1.ban-item
+            .contenido
+              #player2
+          .width.ratio5-1.ban-item
+            .contenido
+              #player3
       #avatar.ban-container
         .ban-row
           .clientes.ban-col-xs-12
-            a(data-ban-target='#carrusel-testimonios', data-ban-slide-to='0')
+            a.bullet-video(data-ban-target='#carrusel-testimonios', data-ban-slide-to='0')
               img.ban-img-responsive(src='assets/img/cliente-01.png', alt='' )
-            a(data-ban-target='#carrusel-testimonios', data-ban-slide-to='1')
+            a.bullet-video(data-ban-target='#carrusel-testimonios', data-ban-slide-to='1')
               img.ban-img-responsive(src='assets/img/cliente-02.png', alt='')
-            a(data-ban-target='#carrusel-testimonios', data-ban-slide-to='2')
+            a.bullet-video(data-ban-target='#carrusel-testimonios', data-ban-slide-to='2')
               img.ban-img-responsive(src='assets/img/cliente-03.png', alt='')
           .ban-col-xs-12
             h2 Nuestros clientes hablan por nosotros
@@ -236,28 +233,5 @@ section#home
               span ser cliente
           .ban-col-xs-5.ban-col-xs-offset-2
             a(href='#') Incorporate aquí
-
-.ban-container
-  .ban-row
-    article.ban-col-md-12 
-      header sadd
-      .tablas
-        table.ban-table.ban-table-striped 
-          tr
-            th asdasdas
-            th asdasdas
-            th asdasdas
-            th asdasdas
-            th asdasdas
-          tr
-            td asdsdasdasdadankdqwkldmwlkdmalksmd
-            td asdsdasdasdadankdqwkldmwlkdmalksmd
-            td asdsdasdasdadankdqwkldmwlkdmalksmd
-            td asdsdasdasdadankdqwkldmwlkdmalksmd
-            td asdsdasdasdadankdqwkldmwlkdmalksmd
-          tr
-            td asdsdasdasdadankdqwkldmwlkdmalksmd
-            td asdsdasdasdadankdqwkldmwlkdmalksmd
-            td asdsdasdasdadankdqwkldmwlkdmalksmd
-            td asdsdasdasdadankdqwkldmwlkdmalksmd
-            td asdsdasdasdadankdqwkldmwlkdmalksmd
+//Script video home
+script(src='assets/js/videoYoutube.min.js')

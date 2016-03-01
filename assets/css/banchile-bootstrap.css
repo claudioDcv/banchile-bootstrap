@@ -2886,7 +2886,13 @@ img {
     border-radius: 50%;
 }
 /* >> 1 Table BAN-TABLE */
+.ban-table td {
+   padding:0; margin:0;
+}
 
+.ban-table {
+   border-collapse: collapse;
+}
 .ban-img-responsive {
     display: block;
     max-width: 100%;

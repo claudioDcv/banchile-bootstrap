@@ -3505,3 +3505,7 @@ table th[class*="ban-col-"] {
     font-size: 1.5rem;
     color: #FFF
 }
+
+
+/* >> FIX PARA BOOTSTRAP */
+.ban-row-fix{margin: 0;}

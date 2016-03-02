@@ -1,70 +1,230 @@
 
-<section id="vista-general">
-  <article id="bienvenida">
+<section class="vista-general">
+  <article class="bienvenida">
     <div class="ban-container">
-      <div class="ban-row">
+      <div class="ban-row widget-contextual">
         <div class="ban-col-xs-7">
           <h2>Bienvenido Camilo</h2>
           <p>Tu último ingreso al sitio: Lunes 25 de Enero de 2016 a las 14:24hrs</p>
-          <table class="table table-condensed">
-            <thead>
-              <tr>
-                <th>Últimos movimientos</th>
-                <th>Empresa</th>
-                <th>Monto</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Aporte a FFMM Disponible A</td>
-                <td>Agricola Campo Lindo Ltda.</td>
-                <td>$20.000.098</td>
-              </tr>
-              <tr>
-                <td>Rescate de FFMM Asiático</td>
-                <td>Pesquera Corp Fish Ltda.</td>
-                <td>$12.000.000</td>
-              </tr>
-              <tr>
-                <td>Pago a tercero Banco New York</td>
-                <td>Importadora Shugion S.A.</td>
-                <td>$100.216</td>
-              </tr>
-            </tbody>
+          <table class="ban-table ban-table-condensed">
+            <tr>
+              <th>Últimos movimientos</th>
+              <th>Empresa</th>
+              <th class="ban-text-right">Monto</th>
+            </tr>
+            <tr>
+              <td><a href="#">Aporte a FFMM Disponible A</a></td>
+              <td><a href="#">Agricola Campo Lindo Ltda.</a></td>
+              <td class="ban-text-right"><a href="#">$20.000.098</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Rescate de FFMM Asiático</a></td>
+              <td><a href="#">Pesquera Corp Fish Ltda.</a></td>
+              <td class="ban-text-right"><a href="#">$12.000.000</a></td>
+            </tr>
+            <tr>
+              <td><a href="#">Pago a tercero Banco New York</a></td>
+              <td><a href="#">Importadora Shugion S.A.</a></td>
+              <td class="ban-text-right"><a href="#">$100.216</a></td>
+            </tr>
           </table>
         </div>
         <div class="ban-col-xs-5">
           <div id="mi-indicador">
-            <!-- aqui tiene que ir el grafico de angular--><img src="assets/img/mi-indicador.png" alt="" class="ban-img-responsive"/><a id="seting-mi-grafico" href="#"><i class="fa fa-cog"></i></a>
+            <!-- aqui tiene que ir el grafico de angular--><img src="assets/img/mi-indicador.png" alt="" class="ban-img-responsive"/><a id="setting-mi-grafico" href="#"><i class="fa fa-cog"></i></a>
           </div>
         </div>
+        <div class="ban-clearfix"></div>
       </div>
     </div>
   </article>
   <!-- fin bienvenida-->
-  <article id="resumen-empresa">
+  <section class="resumen-empresa">
     <div class="ban-container">
-      <div class="ban-row">
-        <div class="ban-col-xs-12">
-          <h2>Resumen de empresas</h2>
-        </div>
-        <div class="ban-clearfix"></div>
-      </div>
-      <div id="empresa1" class="ban-row">
-        <div class="ban-col-xs-12">
-          <div class="ban-row ban-row-fix">
-            <div class="ban-col-xs-4 a">
-              <h3>Agricola Campo Lindo Ltda.</h3>
-            </div>
-            <div class="ban-col-xs-8 b">
-              <p>detalle empresa</p>
-            </div>
+      <header class="title-general-company">
+        <div class="ban-row">
+          <div class="ban-col-xs-12">
+            <h2 class="titulo-section">Resumen de empresas</h2>
           </div>
         </div>
-      </div>
-      <!-- fin ban-row  "EMPRESA 1"-->
+      </header>
+      <!-- >> EMPRESA-->
+      <article id="empresa-1" class="ban-row ban-row-fix box-company">
+        <div class="ban-col-xs-4 box-company-sec-a ban-col-fix">
+          <header>
+            <h3>Agricola Campo Lindo Ltda.</h3>
+            <p>78.098.087-1</p>
+          </header>
+          <section>
+            <p>Patrimonio consolidado al 20/01/2016 </p>
+            <p>$1.100.234.232</p>
+            <div class="ban-row">
+              <div class="ban-col-md-4">
+                <h4>Notificaciones</h4>
+              </div>
+              <div class="ban-col-md-8">
+                <div><a href="#">Alertas de operaciones <i class="fa fa-exclamation-circle"></i></a></div>
+                <div><a href="#">Avisos y recomendaciones <i class="fa fa-exclamation-circle">                           </i></a></div>
+              </div>
+            </div>
+            <div>
+              <button class="ban-btn ban-btn-primary ban-btn-full">Detalle de la empresa</button>
+            </div>
+          </section>
+        </div>
+        <div class="ban-col-xs-8 box-company-sec-b ban-col-fix">
+          <header class="header-fix">
+            <div class="ban-col-xs-6">
+              <div class="vertical-align">
+                <div class="content-header-b">
+                  <div>
+                    <div id="drop-seleccionar-cuenta"></div>
+                  </div>
+                  <div>
+                    <button class="ban-btn ban-btn-primary">Detalle de la cuenta</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ban-col-xs-6">
+              <div class="vertical-align">
+                <div>
+                  <div id="drop-operaciones-recurentes"></div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <section class="ban-row">
+            <div class="box-company-widget ban-col-xs-6">
+              <table class="ban-table ban-table-condensed">
+                <tr>
+                  <th colspan="2">Distribución por moneda</th>
+                </tr>
+                <tr>
+                  <td><a href="#">Patrimonio en CLP</a></td>
+                  <td class="ban-text-right"><a href="#">$20.000.098</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Patrimonio en USD</a></td>
+                  <td class="ban-text-right"><a href="#">USD$ 12.000.000</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Patrimonio en EUR</a></td>
+                  <td class="ban-text-right"><a href="#">$100.216</a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="box-company-widget ban-col-xs-6">
+              <table class="ban-table ban-table-condensed">
+                <tr>
+                  <th colspan="2">Distribución por moneda</th>
+                </tr>
+                <tr>
+                  <td><a href="#">Patrimonio en CLP</a></td>
+                  <td class="ban-text-right"><a href="#">$20.000.098</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Patrimonio en USD</a></td>
+                  <td class="ban-text-right"><a href="#">USD$ 12.000.000</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Patrimonio en EUR</a></td>
+                  <td class="ban-text-right"><a href="#">$100.216</a></td>
+                </tr>
+              </table>
+            </div>
+          </section>
+        </div>
+      </article>
+      <!-- >> FIN EMPRESA-->
+      <article id="empresa-2" class="ban-row ban-row-fix box-company">
+        <div class="ban-col-xs-4 box-company-sec-a ban-col-fix">
+          <header>
+            <h3>Agricola Campo Lindo Ltda.</h3>
+            <p>78.098.087-1</p>
+          </header>
+          <section>
+            <p>Patrimonio consolidado al 20/01/2016 </p>
+            <p>$1.100.234.232</p>
+            <div class="ban-row">
+              <div class="ban-col-md-4">
+                <h4>Notificaciones</h4>
+              </div>
+              <div class="ban-col-md-8">
+                <div><a href="#">Alertas de operaciones <i class="fa fa-exclamation-circle"></i></a></div>
+                <div><a href="#">Avisos y recomendaciones <i class="fa fa-exclamation-circle">                           </i></a></div>
+              </div>
+            </div>
+            <div>
+              <button class="ban-btn ban-btn-primary ban-btn-full">Detalle de la empresa</button>
+            </div>
+          </section>
+        </div>
+        <div class="ban-col-xs-8 box-company-sec-b ban-col-fix">
+          <header class="header-fix">
+            <div class="ban-col-xs-6">
+              <div class="vertical-align">
+                <div class="content-header-b">
+                  <div>
+                    <div id="drop-seleccionar-cuenta"></div>
+                  </div>
+                  <div>
+                    <button class="ban-btn ban-btn-primary">Detalle de la cuenta</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ban-col-xs-6">
+              <div class="vertical-align">
+                <div>
+                  <div id="drop-operaciones-recurentes"></div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <section class="ban-row">
+            <div class="box-company-widget ban-col-xs-6">
+              <table class="ban-table ban-table-condensed">
+                <tr>
+                  <th colspan="2">Distribución por moneda</th>
+                </tr>
+                <tr>
+                  <td><a href="#">Patrimonio en CLP</a></td>
+                  <td class="ban-text-right"><a href="#">$20.000.098</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Patrimonio en USD</a></td>
+                  <td class="ban-text-right"><a href="#">USD$ 12.000.000</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Patrimonio en EUR</a></td>
+                  <td class="ban-text-right"><a href="#">$100.216</a></td>
+                </tr>
+              </table>
+            </div>
+            <div class="box-company-widget ban-col-xs-6">
+              <table class="ban-table ban-table-condensed">
+                <tr>
+                  <th colspan="2">Distribución por moneda</th>
+                </tr>
+                <tr>
+                  <td><a href="#">Patrimonio en CLP</a></td>
+                  <td class="ban-text-right"><a href="#">$20.000.098</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Patrimonio en USD</a></td>
+                  <td class="ban-text-right"><a href="#">USD$ 12.000.000</a></td>
+                </tr>
+                <tr>
+                  <td><a href="#">Patrimonio en EUR</a></td>
+                  <td class="ban-text-right"><a href="#">$100.216</a></td>
+                </tr>
+              </table>
+            </div>
+          </section>
+        </div>
+      </article>
+      <!-- >> FIN EMPRESA-->
     </div>
-    <!-- fin ban-container-->
-  </article>
-  <!-- fin de resumen empresa-->
+  </section>
 </section>

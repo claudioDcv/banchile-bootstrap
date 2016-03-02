@@ -24,3 +24,113 @@ h2{
    border-radius: 0;
    background: none;
 }
+
+.ban-btn-primary{
+  background-color: $color-primary;
+  border-color: $color-primary;
+}
+select{
+  height: 34px;
+}
+/*** DROP DOWN ******/
+.dd-select {
+    font-size: 0.875em;
+    border-radius: 3px;
+    border: solid 1px #ccc;
+    position: relative;
+    cursor: pointer;
+    height: 34px;
+}
+.dd-desc {
+    color: #aaa;
+    display: block;
+    overflow: hidden;
+    font-weight: normal;
+    line-height: 1.4em;
+}
+.dd-selected {
+  line-height: 1.7;
+  overflow: hidden;
+  display: block;
+  padding: 4px 10px;
+  font-weight: 400;
+}
+.dd-pointer {
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -3px;
+}
+.dd-pointer-down {
+    border: solid 5px transparent;
+    border-top: solid 5px #000;
+}
+.dd-pointer-up {
+    border: solid 5px transparent !important;
+    border-bottom: solid 5px #000 !important;
+    margin-top: -8px;
+}
+.dd-options {
+    border: solid 1px #ccc;
+    border-top: none;
+    list-style: none;
+    box-shadow: 0px 1px 5px #ddd;
+    display: none;
+    position: absolute;
+    z-index: 2000;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: auto;
+    > li:last-child > .dd-option {
+        border-bottom: none;
+    }
+}
+.dd-option {
+    font-size: 0.875em;
+    margin: 0 10px;
+    line-height: 1.5;
+    padding: 5px 0px;
+    display: block;
+    border-bottom: solid 1px #ddd;
+    overflow: hidden;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    &:hover {
+        //background: #f3f3f3;
+        color: #000;
+    }
+}
+.dd-selected-description-truncated {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+a.dd-option-selected {
+    color:$color-primary !important;
+}
+.dd-option-image,
+.dd-selected-image {
+    vertical-align: middle;
+    float: left;
+    margin-right: 5px;
+    max-width: 15px;
+}
+.dd-image-right {
+    float: right;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+.dd-container {
+    position: relative;
+}
+.dd-selected-text {
+  font-weight: 400;
+  line-height: 1.5;
+}

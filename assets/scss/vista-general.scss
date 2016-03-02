@@ -1,27 +1,73 @@
+//GENERAl
+.widget-contextual{
+  h2{
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  table{
+    tr{
 
-#vista-general{
+      th{
+        border-top: none;
+        font-weight: 600;
+        &:first-child{
+          color:$color-primary;
+        }
+      }
+      td{
+
+      }
+    }
+  }
+}
+
+.title-general-company{
+  margin: 0;
+  padding: 15px 0;
+  height: auto;
+  h2{
+    font-weight: 300;
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.vista-general{
    padding: 0;
    margin: 0;
-   #bienvenida{
+
+   .bienvenida{
       color: $color-secundario;
-      margin-top: 1em;
+      margin-top: 2em;
+
       h2{
+         border-bottom: none;
          color:$color-primary;
-         font-size: 1.9em;
-         font-weight: 400;
+         padding-bottom: 0;
+      }
+      p{
+         font-size: 1em;
+         color: $color-secundario;
+         margin-bottom: 1.5em;
       }
       table{
-         margin-top: 1.5em;
-         font-size: .8em;
-         thead{
-            color: $color-primary;
+        width: 100%;
+        font-size: .8em;
+            a{
+               text-decoration: none;
+               color: $color-secundario;
+
+               &:hover{
+                  color: $color-primary;
+               }
          }
       }
+
       #mi-indicador{
          position: relative;
-         height: auto;
-         width: 100%;
-         #seting-mi-grafico{
+
+         #setting-mi-grafico{
             position: absolute;
             top: .5em;
             right: 1em;
@@ -30,113 +76,127 @@
       }
    }
 
-   #resumen-empresa{
-      color: $color-secundario;
-      margin-top: 2em;
-
-      h2{
-         border-bottom: 1px solid $color-texto;
-         font-size: 1.9em;
-         font-weight: 400;
-         padding-bottom: .5em;
-         margin-bottom: 1em;
-      }
-
-      #empresa1{
-         .detalle-empresa{
-            border: 1px solid red;
-            .info-empresa{
-               background-color: $color-secundario;
-               color: white;
-               padding: .7em;
-               height: 70px;
-               h3{
-                  font-size: 1.2em;
-                  font-weight: 400;
-                  margin: 0;
-                  padding: 0;
-               }
-               p{
-                  font-size: 1.2em;
-                  font-weight: 300;
-                  color: $color-texto;
-                  margin: .3em 0 0 0;
-                  padding: 0;
-               }
-            }
-            .notificaciones{
-               background-color: $color-bg-detalle-empresa;
-               border: 1px solid $color-texto;
-               color: $color-secundario;
-               padding: 1.3em .7em;
-
-               p{
-                  font-size: .9em;
-                  span{
-                     font-size: 1.2em;
-                  }
-               }
-               ul{
-                  list-style: none;
-                  margin: 0 0 0 2em;
-                  padding: 0;
-
-                  li{
-                     color: $color-primary;
-                     font-size: .9em;
-                     margin-bottom: .2em;
-                     text-align: right;
-
-                     a{
-                        color: $color-secundario;
-                        font-size: 1.5em;
-                        margin-left: 1em;
-                     }
-                  }
-               }
-
-               a:nth-child(1){
-                  background: $color-primary;
-                  border-radius: .3em;
-                  color: white;
-                  display: inline-block;
-                  font-size: 1em;
-                  margin-top: 1em;
-                  text-align: center;
-                  padding: .3em 0;
-                  text-decoration: none;
-                  width: 100%;
-                  &:hover{
-                     background-color: $color-warning;
-                  }
-               }
-            }
-
-         }
-
-         .detalle-cuenta{
-            border: 1px solid red;
-            .menu-accesos-cuenta{
-               color: white;
-               padding: .7em;
-               height: 70px;
-               .dropdown{
-                  display: inline-block;
-               }
-            }
-         }
-      }
-   } /*fin resumen empresa */
 }
 
-#empresa1{
-  .a{
-    border: solid 1px;
-    background: #CCC;
+.vertical-align{
+  >div > div{
+    vertical-align: top;
+     width: auto;
+     display: inline-block;
+     height: 34px;
   }
-  .b{
-    border: solid 1px;
-    border-left: none;
-    background: #DDD;
+}
+
+.box-company{
+      margin: 20px 0;
+      border: solid 1px $color-texto;
+      .box-company-sec-a{
+        border-right: solid 1px $color-texto;
+        header{
+          height: 70px;
+          background-color: $color-secundario;
+          h3{
+            font-size: 1.2em;
+            color: $color-bg-primario;
+          }
+          p{
+            margin:10px 0;
+            font-weight: 300;
+            font-size: .9em;
+            color:$color-bg-default;
+          }
+        }
+        section{
+          color: $color-secundario;
+          font-size: .8em;
+          background-color: $color-bg-section-primary;
+          h4{
+            display: inline-block;
+            border-right: solid 2px ;
+            padding-right: 15px;
+          }
+          >p:nth-child(2){
+            margin:8px 0;
+            font-size: 1.2em;
+          }
+          > div:nth-child(3){
+            padding:10px 0 15px 0;
+          }
+          div > div:first-child{
+
+          }
+          div > div:last-child{
+            text-align: right;
+          }
+
+        }
+        > *{
+          padding:15px;
+        }
+      }
+      .box-company-sec-b{
+        header{
+          height: 70px;
+          &.header-fix{
+            padding: 15px 0;
+          }
+          .content-header-b{
+            > div{
+              width: 50%;
+              float: left;
+              &:last-child{
+                padding-left: 15px;
+              }
+            }
+          }
+        }
+        section{
+
+        }
+        >*{
+          padding: 0 15px;
+        }
+      }
+      a{
+        color: $color-secundario;
+        &:hover{
+          color: $color-primary;
+        }
+      }
+      .box-company-widget{
+        margin: 10px 0;
+        &:nth-child(odd){
+          border-right: solid 1px;
+        }
+        th{
+          color:  $color-primary;
+          border-bottom: solid 2px  $color-texto;
+          border-top: none;
+          font-weight: 600;
+        }
+        tr{
+          font-size: .8em;
+          &:hover{
+            background: $color-box-primario;
+          }
+        }
+      }
+}
+
+.ban-table-data-min{
+  tr{
+
+    th{
+
+    }
+    td{
+      a{color:  $color-primary;
+        i{
+          color: $color-secundario;
+        }
+      }
+      border-top:none !important;
+
+    }
   }
 }

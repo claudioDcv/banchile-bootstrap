@@ -1,61 +1,59 @@
 
-<section class="vista-general">
-  <article class="bienvenida">
-    <div class="ban-container">
-      <div class="ban-row widget-contextual">
-        <div class="ban-col-xs-7">
-          <h2>Bienvenido Camilo</h2>
-          <p>Tu último ingreso al sitio: Lunes 25 de Enero de 2016 a las 14:24hrs</p>
-          <table class="ban-table ban-table-condensed">
-            <tr>
-              <th>Últimos movimientos</th>
-              <th>Empresa</th>
-              <th class="ban-text-right">Monto</th>
-            </tr>
-            <tr>
-              <td><a href="#">Aporte a FFMM Disponible A</a></td>
-              <td><a href="#">Agricola Campo Lindo Ltda.</a></td>
-              <td class="ban-text-right"><a href="#">$20.000.098</a></td>
-            </tr>
-            <tr>
-              <td><a href="#">Rescate de FFMM Asiático</a></td>
-              <td><a href="#">Pesquera Corp Fish Ltda.</a></td>
-              <td class="ban-text-right"><a href="#">$12.000.000</a></td>
-            </tr>
-            <tr>
-              <td><a href="#">Pago a tercero Banco New York</a></td>
-              <td><a href="#">Importadora Shugion S.A.</a></td>
-              <td class="ban-text-right"><a href="#">$100.216</a></td>
-            </tr>
-          </table>
-        </div>
-        <div class="ban-col-xs-5">
-          <div id="mi-indicador">
-            <!-- aqui tiene que ir el grafico de angular--><img src="assets/img/mi-indicador.png" alt="" class="ban-img-responsive"/><a id="setting-mi-grafico" href="#"><i class="fa fa-cog"></i></a>
-          </div>
-        </div>
-        <div class="ban-clearfix"></div>
+<div class="ban-container">
+  <!--Seccion Widget-->
+  <section class="ban-row widget-contextual">
+    <div class="ban-col-xs-7">
+      <h2>Bienvenido Camilo</h2>
+      <p>Tu último ingreso al sitio: Lunes 25 de Enero de 2016 a las 14:24hrs</p>
+      <table class="ban-table ban-table-condensed">
+        <tr>
+          <th>Últimos movimientos</th>
+          <th>Empresa</th>
+          <th class="ban-text-right">Monto</th>
+        </tr>
+        <tr>
+          <td><a href="#">Aporte a FFMM Disponible A</a></td>
+          <td><a href="#">Agricola Campo Lindo Ltda.</a></td>
+          <td class="ban-text-right"><a href="#">$20.000.098</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Rescate de FFMM Asiático</a></td>
+          <td><a href="#">Pesquera Corp Fish Ltda.</a></td>
+          <td class="ban-text-right"><a href="#">$12.000.000</a></td>
+        </tr>
+        <tr>
+          <td><a href="#">Pago a tercero Banco New York</a></td>
+          <td><a href="#">Importadora Shugion S.A.</a></td>
+          <td class="ban-text-right"><a href="#">$100.216</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="ban-col-xs-5">
+      <div class="widget-contextual-indicador">
+        <!-- aqui tiene que ir el grafico de angular--><img src="assets/img/mi-indicador.png" alt="" class="ban-img-responsive"/><a href="#" class="widget-contextual-setting-grafico"><i class="fa fa-cog"></i></a>
       </div>
     </div>
-  </article>
-  <!-- fin bienvenida-->
-  <section class="resumen-empresa">
-    <div class="ban-container">
-      <header class="title-general-company">
-        <div class="ban-row">
-          <div class="ban-col-xs-12">
-            <h2 class="titulo-section">Resumen de empresas</h2>
-          </div>
+    <!-- fin bienvenida-->
+  </section>
+  <!--Seccion Header Sitio-->
+  <section class="title-general">
+    <header>
+      <div class="ban-row">
+        <div class="ban-col-xs-12">
+          <h2 class="titulo-section">Resumen de empresas</h2>
         </div>
-      </header>
-      <!-- >> EMPRESA-->
+      </div>
+    </header>
+    <!--Seccion Box Empresas      -->
+    <!-- >> EMPRESA-->
+    <section class="cont-company">
       <article id="empresa-1" class="ban-row ban-row-fix box-company">
-        <div class="ban-col-xs-4 box-company-sec-a ban-col-fix">
+        <section class="ban-col-xs-4 box-company-sec-a ban-col-fix">
           <header>
             <h3>Agricola Campo Lindo Ltda.</h3>
             <p>78.098.087-1</p>
           </header>
-          <section>
+          <div>
             <p>Patrimonio consolidado al 20/01/2016 </p>
             <p>$1.100.234.232</p>
             <div class="ban-row">
@@ -70,9 +68,9 @@
             <div>
               <button class="ban-btn ban-btn-primary ban-btn-full">Detalle de la empresa</button>
             </div>
-          </section>
-        </div>
-        <div class="ban-col-xs-8 box-company-sec-b ban-col-fix">
+          </div>
+        </section>
+        <section class="ban-col-xs-8 box-company-sec-b ban-col-fix">
           <header class="header-fix">
             <div class="ban-col-xs-6">
               <div class="vertical-align">
@@ -86,7 +84,7 @@
                 </div>
               </div>
             </div>
-            <div class="ban-col-xs-6">
+            <div class="ban-col-xs-5">
               <div class="vertical-align">
                 <div>
                   <div id="drop-operaciones-recurentes"></div>
@@ -94,7 +92,7 @@
               </div>
             </div>
           </header>
-          <section class="ban-row">
+          <div class="ban-row">
             <div class="box-company-widget ban-col-xs-6">
               <table class="ban-table ban-table-condensed">
                 <tr>
@@ -133,17 +131,17 @@
                 </tr>
               </table>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </article>
       <!-- >> FIN EMPRESA-->
       <article id="empresa-2" class="ban-row ban-row-fix box-company">
-        <div class="ban-col-xs-4 box-company-sec-a ban-col-fix">
+        <section class="ban-col-xs-4 box-company-sec-a ban-col-fix">
           <header>
             <h3>Agricola Campo Lindo Ltda.</h3>
             <p>78.098.087-1</p>
           </header>
-          <section>
+          <div>
             <p>Patrimonio consolidado al 20/01/2016 </p>
             <p>$1.100.234.232</p>
             <div class="ban-row">
@@ -158,9 +156,9 @@
             <div>
               <button class="ban-btn ban-btn-primary ban-btn-full">Detalle de la empresa</button>
             </div>
-          </section>
-        </div>
-        <div class="ban-col-xs-8 box-company-sec-b ban-col-fix">
+          </div>
+        </section>
+        <section class="ban-col-xs-8 box-company-sec-b ban-col-fix">
           <header class="header-fix">
             <div class="ban-col-xs-6">
               <div class="vertical-align">
@@ -174,7 +172,7 @@
                 </div>
               </div>
             </div>
-            <div class="ban-col-xs-6">
+            <div class="ban-col-xs-5">
               <div class="vertical-align">
                 <div>
                   <div id="drop-operaciones-recurentes"></div>
@@ -182,7 +180,7 @@
               </div>
             </div>
           </header>
-          <section class="ban-row">
+          <div class="ban-row">
             <div class="box-company-widget ban-col-xs-6">
               <table class="ban-table ban-table-condensed">
                 <tr>
@@ -221,10 +219,10 @@
                 </tr>
               </table>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </article>
       <!-- >> FIN EMPRESA-->
-    </div>
+    </section>
   </section>
-</section>
+</div>

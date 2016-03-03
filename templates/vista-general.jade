@@ -1,131 +1,130 @@
-section.vista-general
-      article.bienvenida
-        .ban-container
-          .ban-row.widget-contextual
-            .ban-col-xs-7
-              h2 Bienvenido Camilo
-              p Tu último ingreso al sitio: Lunes 25 de Enero de 2016 a las 14:24hrs
-              table.ban-table.ban-table-condensed
-                tr
-                  th Últimos movimientos
-                  th Empresa
-                  th.ban-text-right Monto
-                tr
-                  td
-                    a(href='#') Aporte a FFMM Disponible A
-                  td
-                    a(href='#') Agricola Campo Lindo Ltda.
-                  td.ban-text-right
-                    a(href='#') $20.000.098
-                tr
-                  td
-                    a(href='#') Rescate de FFMM Asiático
-                  td
-                    a(href='#') Pesquera Corp Fish Ltda.
-                  td.ban-text-right
-                    a(href='#') $12.000.000
-                tr
-                  td
-                    a(href='#') Pago a tercero Banco New York
-                  td
-                    a(href='#') Importadora Shugion S.A.
-                  td.ban-text-right
-                    a(href='#') $100.216
-            .ban-col-xs-5
-              #mi-indicador
-                // aqui tiene que ir el grafico de angular
-                img.ban-img-responsive(src='assets/img/mi-indicador.png', alt='')
-                a#setting-mi-grafico(href='#')
-                  i.fa.fa-cog
-            .ban-clearfix
-      // fin bienvenida
-      section.resumen-empresa
-        .ban-container
-          header.title-general-company
-            .ban-row
-              .ban-col-xs-12
-                h2.titulo-section Resumen de empresas
-              
-              
-              
-          // >> EMPRESA
-          each val, index in ['1', '2']
-            article(id="empresa-"+val).ban-row.ban-row-fix.box-company
-              .ban-col-xs-4.box-company-sec-a.ban-col-fix
-                header
-                  h3 Agricola Campo Lindo Ltda.
-                  p 78.098.087-1
-                section
-                  p Patrimonio consolidado al 20/01/2016 
-                  p $1.100.234.232
-                  div.ban-row
-                    div.ban-col-md-4
-                      h4 Notificaciones
-                    div.ban-col-md-8
-                      div
-                        a(href='#')
-                          | Alertas de operaciones 
-                          i.fa.fa-exclamation-circle
-                      
-                      div
-                        a(href='#')
-                          | Avisos y recomendaciones 
-                          i.fa.fa-exclamation-circle                            
+.ban-container
+  //Seccion Widget
+  section.ban-row.widget-contextual
+    .ban-col-xs-7
+      h2 Bienvenido Camilo
+      p Tu último ingreso al sitio: Lunes 25 de Enero de 2016 a las 14:24hrs
+      table.ban-table.ban-table-condensed
+        tr
+          th Últimos movimientos
+          th Empresa
+          th.ban-text-right Monto
+        tr
+          td
+            a(href='#') Aporte a FFMM Disponible A
+          td
+            a(href='#') Agricola Campo Lindo Ltda.
+          td.ban-text-right
+            a(href='#') $20.000.098
+        tr
+          td
+            a(href='#') Rescate de FFMM Asiático
+          td
+            a(href='#') Pesquera Corp Fish Ltda.
+          td.ban-text-right
+            a(href='#') $12.000.000
+        tr
+          td
+            a(href='#') Pago a tercero Banco New York
+          td
+            a(href='#') Importadora Shugion S.A.
+          td.ban-text-right
+            a(href='#') $100.216
+    .ban-col-xs-5
+      .widget-contextual-indicador
+        // aqui tiene que ir el grafico de angular
+        img.ban-img-responsive(src='assets/img/mi-indicador.png', alt='')
+        a.widget-contextual-setting-grafico(href='#')
+          i.fa.fa-cog
+    // fin bienvenida
+  //Seccion Header Sitio
+  section.title-general
+    header
+      .ban-row
+        .ban-col-xs-12
+          h2.titulo-section Resumen de empresas
+        
+        
+    //Seccion Box Empresas      
+    // >> EMPRESA
+    section.cont-company
+      each val, index in ['1', '2']
+        article(id="empresa-"+val).ban-row.ban-row-fix.box-company
+          section.ban-col-xs-4.box-company-sec-a.ban-col-fix
+            header
+              h3 Agricola Campo Lindo Ltda.
+              p 78.098.087-1
+            div
+              p Patrimonio consolidado al 20/01/2016 
+              p $1.100.234.232
+              div.ban-row
+                div.ban-col-md-4
+                  h4 Notificaciones
+                div.ban-col-md-8
                   div
-                    button.ban-btn.ban-btn-primary.ban-btn-full Detalle de la empresa
-              .ban-col-xs-8.box-company-sec-b.ban-col-fix
-                header.header-fix
-                  div.ban-col-xs-6
-                    .vertical-align
-                      div.content-header-b
-                        div
-                          div#drop-seleccionar-cuenta
-                        div
-                          button.ban-btn.ban-btn-primary Detalle de la cuenta
-                  div.ban-col-xs-6
-                    .vertical-align
-                        div
-                          div#drop-operaciones-recurentes
-                            
-                section.ban-row
-                  div.box-company-widget.ban-col-xs-6
-                    table.ban-table.ban-table-condensed
-                      tr
-                        th(colspan='2')
-                          | Distribución por moneda
-                      tr
-                        td
-                          a(href='#') Patrimonio en CLP
-                        td.ban-text-right
-                          a(href='#') $20.000.098
-                      tr
-                        td
-                          a(href='#') Patrimonio en USD
-                        td.ban-text-right
-                          a(href='#') USD$ 12.000.000
-                      tr
-                        td
-                          a(href='#') Patrimonio en EUR
-                        td.ban-text-right
-                          a(href='#') $100.216
-                  div.box-company-widget.ban-col-xs-6
-                    table.ban-table.ban-table-condensed
-                      tr
-                        th(colspan='2')
-                          | Distribución por moneda
-                      tr
-                        td
-                          a(href='#') Patrimonio en CLP
-                        td.ban-text-right
-                          a(href='#') $20.000.098
-                      tr
-                        td
-                          a(href='#') Patrimonio en USD
-                        td.ban-text-right
-                          a(href='#') USD$ 12.000.000
-                      tr
-                        td
-                          a(href='#') Patrimonio en EUR
-                        td.ban-text-right
-                          a(href='#') $100.216
-            // >> FIN EMPRESA
+                    a(href='#')
+                      | Alertas de operaciones 
+                      i.fa.fa-exclamation-circle
+                  
+                  div
+                    a(href='#')
+                      | Avisos y recomendaciones 
+                      i.fa.fa-exclamation-circle                            
+              div
+                button.ban-btn.ban-btn-primary.ban-btn-full Detalle de la empresa
+          section.ban-col-xs-8.box-company-sec-b.ban-col-fix
+            header.header-fix
+              div.ban-col-xs-6
+                .vertical-align
+                  div.content-header-b
+                    div
+                      div#drop-seleccionar-cuenta
+                    div
+                      button.ban-btn.ban-btn-primary Detalle de la cuenta
+              div.ban-col-xs-5
+                .vertical-align
+                    div
+                      div#drop-operaciones-recurentes
+                        
+            div.ban-row
+              div.box-company-widget.ban-col-xs-6
+                table.ban-table.ban-table-condensed
+                  tr
+                    th(colspan='2')
+                      | Distribución por moneda
+                  tr
+                    td
+                      a(href='#') Patrimonio en CLP
+                    td.ban-text-right
+                      a(href='#') $20.000.098
+                  tr
+                    td
+                      a(href='#') Patrimonio en USD
+                    td.ban-text-right
+                      a(href='#') USD$ 12.000.000
+                  tr
+                    td
+                      a(href='#') Patrimonio en EUR
+                    td.ban-text-right
+                      a(href='#') $100.216
+              div.box-company-widget.ban-col-xs-6
+                table.ban-table.ban-table-condensed
+                  tr
+                    th(colspan='2')
+                      | Distribución por moneda
+                  tr
+                    td
+                      a(href='#') Patrimonio en CLP
+                    td.ban-text-right
+                      a(href='#') $20.000.098
+                  tr
+                    td
+                      a(href='#') Patrimonio en USD
+                    td.ban-text-right
+                      a(href='#') USD$ 12.000.000
+                  tr
+                    td
+                      a(href='#') Patrimonio en EUR
+                    td.ban-text-right
+                      a(href='#') $100.216
+        // >> FIN EMPRESA

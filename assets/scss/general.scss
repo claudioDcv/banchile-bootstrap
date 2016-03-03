@@ -26,6 +26,7 @@ h2{
 }
 
 .ban-btn-primary{
+  max-width: 100%;
   background-color: $color-primary;
   border-color: $color-primary;
 }
@@ -133,4 +134,76 @@ a.dd-option-selected {
 .dd-selected-text {
   font-weight: 400;
   line-height: 1.5;
+}
+
+// >> COMPONENTES
+section.title-general{
+  header{
+    margin: 0;
+    padding: 15px 0;
+    height: auto;
+    border-bottom: solid 1px;
+    h2{
+      font-weight: 300;
+      font-size: 2em;
+      margin: 0;
+      padding: 0;
+      color: $color-box-noticias;
+    }
+  }
+}
+
+// >> WIDGET CONTEXTUALES
+
+section.widget-contextual{
+  margin-top:30px;
+  margin-bottom: 30px;
+  h2{
+    font-size: 2em;
+    margin-bottom: 10px;
+    border-bottom: none;
+    color:$color-primary;
+    padding-bottom: 0;
+  }
+  table{
+    margin-top:15px;
+    tr{
+
+      th{
+        border-top: none;
+        font-weight: 600;
+        &:first-child{
+          color:$color-primary;
+        }
+      }
+      td{
+
+      }
+      width: 100%;
+      font-size: .8em;
+          a{
+             text-decoration: none;
+             color: $color-secundario;
+
+             &:hover{
+                color: $color-primary;
+             }
+       }
+       p{
+         font-size: 1em;
+          color: $color-secundario;
+          margin-bottom: 1.5em;
+       }
+    }
+  }
+  .widget-contextual-indicador{
+     position: relative;
+
+     .widget-contextual-setting-grafico{
+        position: absolute;
+        top: .5em;
+        right: 1em;
+        z-index: 2;
+     }
+  }
 }

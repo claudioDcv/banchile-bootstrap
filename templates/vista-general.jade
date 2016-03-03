@@ -34,16 +34,30 @@
       .widget-contextual-indicador
         // aqui tiene que ir el grafico de angular
         img.ban-img-responsive(src='assets/img/mi-indicador.png', alt='')
-        a.widget-contextual-setting-grafico(href='#')
-          i.fa.fa-cog
+        .widget-contextual-actions
+          .cont-icon-interaction
+            .vertical-align
+              div
+                a.icon-interaction(href='#')
+                  i.fa.fa-cog
     // fin bienvenida
   //Seccion Header Sitio
   section.title-general
     header
       .ban-row
         .ban-col-xs-12
-          h2.titulo-section Resumen de empresas
-        
+          h2.title-general-healding Resumen de empresas
+            small Cuenta 0
+        .cont-icon-interaction
+          .vertical-align
+            div
+              a.icon-interaction.icon-interaction-border(href='#')
+                i.fa.fa-cog
+              a.icon-interaction.icon-interaction-border(href='#')
+                i.fa.fa-cog
+              a.icon-interaction.icon-interaction-border(href='#')
+                i.fa.fa-cog
+    
         
     //Seccion Box Empresas      
     // >> EMPRESA
@@ -85,6 +99,11 @@
                 .vertical-align
                     div
                       div#drop-operaciones-recurentes
+              .cont-icon-interaction.icon-interaction-pad-right
+                .vertical-align
+                  div
+                    a.icon-interaction(href='#')
+                      i.fa.fa-cog
                         
             div.ban-row
               div.box-company-widget.ban-col-xs-6

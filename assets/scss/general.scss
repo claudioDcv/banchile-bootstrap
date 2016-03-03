@@ -50,6 +50,10 @@ select{
     line-height: 1.4em;
 }
 .dd-selected {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 95%;
+  vertical-align: top;
   line-height: 1.7;
   overflow: hidden;
   display: block;
@@ -116,6 +120,13 @@ select{
 a.dd-option-selected {
     color:$color-primary !important;
 }
+.dd-option-text{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 80%;
+  overflow: hidden;
+  display: block;
+}
 .dd-option-image,
 .dd-selected-image {
     vertical-align: middle;
@@ -124,9 +135,10 @@ a.dd-option-selected {
     max-width: 15px;
 }
 .dd-image-right {
-    float: right;
-    margin-right: 15px;
-    margin-top: 5px;
+  right: 10px;
+  margin-right: 15px;
+  margin-top: 5px;
+  position: absolute;
 }
 .dd-container {
     position: relative;
@@ -134,21 +146,47 @@ a.dd-option-selected {
 .dd-selected-text {
   font-weight: 400;
   line-height: 1.5;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 80%;
+  display: inline-block;
+  vertical-align: top;
 }
 
 // >> COMPONENTES
+/*
+section.title-general
+  header
+    .ban-row
+      .ban-col-xs-12
+        h2.titulo-section Resumen de empresas
+*/
 section.title-general{
   header{
     margin: 0;
     padding: 15px 0;
     height: auto;
     border-bottom: solid 1px;
-    h2{
-      font-weight: 300;
+    position: relative;
+    h2.title-general-healding{
+      font-weight: 500;
       font-size: 1.8em;
       margin: 0;
       padding: 0;
       color: $color-box-noticias;
+      small{
+        padding-left: 15px;
+        margin-left: 15px;
+        font-size: .7em;
+        border-left: solid 1px $color-bg-detalle-empresa;
+        color: $color-bg-detalle-empresa;
+      }
+    }
+    .title-general-actions{
+      position: absolute;
+      top:0;
+      right: 0;
     }
   }
 }
@@ -159,6 +197,7 @@ section.widget-contextual{
   margin-top:30px;
   margin-bottom: 30px;
   h2{
+    font-weight: 500;
     font-size: 1.8em;
     margin-bottom: 10px;
     border-bottom: none;
@@ -199,11 +238,46 @@ section.widget-contextual{
   .widget-contextual-indicador{
      position: relative;
 
-     .widget-contextual-setting-grafico{
+     .widget-contextual-actions{
         position: absolute;
         top: .5em;
         right: 1em;
         z-index: 2;
      }
   }
+}
+// >> ICON INTERACTION
+/*
+  .cont-icon-interaction.icon-interaction-pad-right
+    .vertical-align
+      div
+        a.icon-interaction.icon-interaction-border(href='#')
+          i.fa.fa-cog
+*/
+.cont-icon-interaction{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  &.icon-interaction-pad-right{
+    padding-right: 15px;
+  }
+  a{
+    padding: 2px 5px;
+    i{
+      color: $color-box-noticias;
+      &:hover{color:$color-primary;}
+    }
+  &.icon-interaction-border{
+    border-right: 2px $color-bg-detalle-empresa solid;
+    &:first-child{
+      border-left:  2px $color-bg-detalle-empresa solid;
+    }
+    }
+  }
+}
+
+// >> Badget
+.ban-badget{
+
 }

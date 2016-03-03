@@ -68,15 +68,17 @@ section.cont-company{
         }
         .box-company-sec-b{
           header{
+            position: relative;
             height: 70px;
             &.header-fix{
               padding: 15px 0;
             }
             .content-header-b{
               > div{
-                width: 50%;
+                width: 40%;
                 float: left;
                 &:last-child{
+                  width: 60%;
                   padding-left: 15px;
                 }
               }
